@@ -17,21 +17,21 @@ input {
     font-size: 12px; font-weight: bold;
 }
 
-/* Estilo dos segmentos */
+
 .strength-segments { display: flex; gap: 5px; margin-top: 10px; }
 
 .segment { 
-    flex: 1; height: 4px; background-color: #e0e0e0; /* Cinza igual sua imagem */
+    flex: 1; height: 4px; background-color: #e0e0e0;
     border-radius: 2px; transition: background-color 0.3s; 
 }
 
-/* Cores dos segmentos */
-.segment.vermelho { background-color: #ff4d4d; } /* Fraca */
-.segment.amarelo { background-color: #ffd11a; }  /* Média */
-.segment.verde { background-color: #2eb82e; }    /* Forte */
+
+.segment.vermelho { background-color: #ff4d4d; } 
+.segment.amarelo { background-color: #ffd11a; }  
+.segment.verde { background-color: #2eb82e; }    
 
 
-/* Configuração do Tema Dourado Futurista */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -39,7 +39,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Fundo com a arena e um tom de âmbar/dourado nas bordas */
     background: radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(20,15,0,0.9) 100%), 
                 url('https://trrsf.com');
     background-size: cover;
@@ -48,17 +47,17 @@ body {
 
 .container {
     width: 350px;
-    background: rgba(10, 10, 10, 0.95); /* Preto quase puro */
+    background: rgba(10, 10, 10, 0.95); 
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid #d4af37; /* Borda cor de Ouro */
-    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2); /* Brilho dourado suave ao redor */
+    border: 1px solid #d4af37; 
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2); 
     color: #fff;
     text-align: center;
 }
 
 h3 {
-    color: #d4af37; /* Título Dourado */
+    color: #d4af37; 
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 25px;
@@ -71,7 +70,7 @@ input {
     background: #1a1a1a;
     border: 1px solid #333;
     border-radius: 8px;
-    color: #d4af37; /* Texto que você digita sai em dourado */
+    color: #d4af37;
     font-size: 16px;
     outline: none;
     transition: 0.3s;
@@ -103,13 +102,12 @@ input:focus {
 .segment {
     flex: 1;
     height: 5px;
-    background-color: #222; /* Cinza bem escuro para o "apagado" */
+    background-color: #222; 
     border-radius: 2px;
     transition: 0.4s;
 }
 
-/* Transição de cores: do Laranja Quente ao Dourado Brilhante */
-.segment.vermelho { background-color: #ff0000; box-shadow: 0 0 10px #ff0000; } /* Marrom Avermelhado */
-.segment.amarelo { background-color: #ffc400; box-shadow: 0 0 10px #ffc400; }  /* Dourado Clássico */
-.segment.verde { background-color: #00ff15; box-shadow: 0 0 20px #00ff15; }    /* Amarelo Elétrico (Forte) */
+.segment.vermelho { background-color: #ff0000; box-shadow: 0 0 10px #ff0000; } 
+.segment.amarelo { background-color: #ffc400; box-shadow: 0 0 10px #ffc400; }  
+.segment.verde { background-color: #00ff15; box-shadow: 0 0 20px #00ff15; }   
 
