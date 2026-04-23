@@ -1,0 +1,115 @@
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f9f9f9; display: flex; justify-content: center; padding-top: 50px; }
+.container { width: 400px; background: white; padding: 20px; border-radius: 8px; }
+
+h3 { margin: 0 0 5px 0; font-size: 16px; color: #333; }
+.instrucao { font-size: 12px; color: #888; margin-bottom: 15px; line-height: 1.4; }
+
+.input-wrapper { position: relative; width: 100%; }
+
+input { 
+    width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; 
+    box-sizing: border-box; font-size: 16px; outline: none;
+}
+
+#char-count {
+    position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+    background: #4caf50; color: white; padding: 2px 8px; border-radius: 4px;
+    font-size: 12px; font-weight: bold;
+}
+
+/* Estilo dos segmentos */
+.strength-segments { display: flex; gap: 5px; margin-top: 10px; }
+
+.segment { 
+    flex: 1; height: 4px; background-color: #e0e0e0; /* Cinza igual sua imagem */
+    border-radius: 2px; transition: background-color 0.3s; 
+}
+
+/* Cores dos segmentos */
+.segment.vermelho { background-color: #ff4d4d; } /* Fraca */
+.segment.amarelo { background-color: #ffd11a; }  /* Média */
+.segment.verde { background-color: #2eb82e; }    /* Forte */
+
+
+/* Configuração do Tema Dourado Futurista */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Fundo com a arena e um tom de âmbar/dourado nas bordas */
+    background: radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(20,15,0,0.9) 100%), 
+                url('https://trrsf.com');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 350px;
+    background: rgba(10, 10, 10, 0.95); /* Preto quase puro */
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #d4af37; /* Borda cor de Ouro */
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.2); /* Brilho dourado suave ao redor */
+    color: #fff;
+    text-align: center;
+}
+
+h3 {
+    color: #d4af37; /* Título Dourado */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #d4af37; /* Texto que você digita sai em dourado */
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+#char-count {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #d4af37;
+    color: #000;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.strength-segments {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.segment {
+    flex: 1;
+    height: 5px;
+    background-color: #222; /* Cinza bem escuro para o "apagado" */
+    border-radius: 2px;
+    transition: 0.4s;
+}
+
+/* Transição de cores: do Laranja Quente ao Dourado Brilhante */
+.segment.vermelho { background-color: #ff0000; box-shadow: 0 0 10px #ff0000; } /* Marrom Avermelhado */
+.segment.amarelo { background-color: #ffc400; box-shadow: 0 0 10px #ffc400; }  /* Dourado Clássico */
+.segment.verde { background-color: #00ff15; box-shadow: 0 0 20px #00ff15; }    /* Amarelo Elétrico (Forte) */
+
